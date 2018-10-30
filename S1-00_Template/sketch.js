@@ -9,7 +9,7 @@ function setup() {
 }
 
 function draw() {
-  fill(215, 200, 170);
+  fill(400, 800, 10);
 
   //Run the nested loop for x, and y
   for (let y = 0; y < 10; y++) {
