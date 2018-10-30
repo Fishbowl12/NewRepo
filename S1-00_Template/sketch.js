@@ -1,23 +1,23 @@
 //DAT405 / GAD405
-//00_Template
-//The purpose of this sketch is to provide a basic template
-//for P5.js projects
+//03_NestedForLoop - Visual
 
-//Initialization function
+let size = 50;
+
 function setup() {
-  //Print a message to the console - to view using Chrome:
-  //View > Developer > Developer Tools > Console
-  console.log("Initialization: OK")
-  createCanvas(500,500);
+  createCanvas(500, 500);
+  noLoop();
 }
 
-//Rendering function
 function draw() {
-  //Set a background color
-  background(255, 0, 255);
+  fill(215, 200, 170);
 
-  //Print a message to the console - to view using Chrome:
-  //View > Developer > Developer Tools > Console
-  console.log("Rendering...")
-  noLoop();
+  //Run the nested loop for x, and y
+  for (let y = 0; y < 10; y++) {
+    for (let x = 0; x < 10; x++) {
+      //Draw the shape at the corresponding position
+      //This will generate a dynamic position for the x and y
+      //The shape is redrawn as many times as the loop says (in this case 100)
+      rect(size * x, size * y, size, size);
+    }
+  }
 }
